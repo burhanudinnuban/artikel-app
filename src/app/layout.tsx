@@ -4,8 +4,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { LanguageProvider } from '@/lib/i18n';
 
 export const metadata: Metadata = {
-  title: 'Aceh Flood Insight',
-  description: 'Analysis of Mass Media Communication on Government Response to Floods in Aceh, North Sumatra, and West Sumatra.',
+  title: 'Jurnal Analisis Bencana',
+  description: 'Analisis Isi Media Massa terhadap Komunikasi Respons Pemerintah dalam Bencana Banjir Bandang.',
 };
 
 export default function RootLayout({
@@ -14,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="id" className="h-full scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased h-full bg-background">
         <LanguageProvider>

@@ -1,11 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { PanelLeft, Globe } from 'lucide-react';
-import Filters from '@/components/filters';
-import { filterOptions } from '@/lib/data';
+import { Globe } from 'lucide-react';
 import { Logo } from '@/components/icons';
 import { useI18n } from '@/lib/i18n';
 import {
@@ -42,33 +39,16 @@ function LanguageSwitcher() {
 export default function DashboardHeader() {
   const { t } = useI18n();
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b bg-background px-4 sm:px-6">
-      <Link href="/" className="flex items-center gap-2 font-semibold">
-        <Logo className="h-8 w-8 text-primary" />
-        <span className="text-lg">{t('appTitle')}</span>
-      </Link>
-      <div className="flex-1">
-        <p className="text-sm text-muted-foreground hidden md:block">
-          {t('appDescription')}
-        </p>
-      </div>
-      <LanguageSwitcher />
-      <div className="md:hidden">
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button size="icon" variant="outline">
-              <PanelLeft className="h-5 w-5" />
-              <span className="sr-only">Toggle filters</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-72">
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-4">{t('filters')}</h2>
-              <Filters options={filterOptions} isMobile={true} />
+    <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b bg-background/80 backdrop-blur-sm px-4 sm:px-6">
+        <div className="container mx-auto flex items-center">
+            <Link href="/" className="flex items-center gap-2 font-semibold">
+                <Logo className="h-8 w-8 text-primary" />
+                <span className="text-lg font-headline hidden sm:inline-block">{t('appTitle')}</span>
+            </Link>
+            <div className="flex-1">
             </div>
-          </SheetContent>
-        </Sheet>
-      </div>
+            <LanguageSwitcher />
+        </div>
     </header>
   );
 }
