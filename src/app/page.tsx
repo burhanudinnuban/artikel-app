@@ -33,7 +33,6 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
   const content = language === 'id' ? event.content_id : event.content_en;
   const sentimentReason = isArticle ? (language === 'id' ? (event as Article).sentimentReason_id : (event as Article).sentimentReason_en) : '';
 
-
   return (
     <div className="flex items-start gap-4">
       <div className="flex flex-col items-center">
@@ -54,6 +53,25 @@ function TimelineItem({ event }: { event: TimelineEvent }) {
           </CardDescription>
         </CardHeader>
         <CardContent>
+          {isArticle && (
+            <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="relative aspect-video">
+                <Image
+                  src={(event as Article).imageUrl}
+                  alt={title}
+                  fill
+                  className="object-cover rounded-md border"
+                  data-ai-hint={(event as Article).imageHint}
+                />
+              </div>
+              <div className="relative aspect-video">
+                <video controls className="w-full h-full object-cover rounded-md border">
+                    <source src={(event as Article).videoUrl} type="video/mp4" />
+                    {t('videoNotSupported')}
+                </video>
+              </div>
+            </div>
+          )}
           <p className="text-muted-foreground">{content}</p>
           {isArticle && (
             <div className="mt-4">
@@ -79,55 +97,6 @@ function TimelineView({ events }: { events: TimelineEvent[] }) {
       {events.map((event) => (
         <TimelineItem key={`${event.type}-${event.id}`} event={event} />
       ))}
-    </div>
-  );
-}
-
-function ArticleView({ articles }: { articles: Article[] }) {
-   const { t, language } = useI18n();
-   if (articles.length === 0) {
-    return <p className="text-center text-muted-foreground mt-8">{t('noArticles')}</p>;
-  }
-  return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {articles.map((article) => {
-        const title = language === 'id' ? article.title_id : article.title_en;
-        const content = language === 'id' ? article.content_id : article.content_en;
-
-        return (
-          <Card key={article.id} className="flex flex-col">
-            <div className="relative h-48 w-full">
-              <Image
-                src={article.imageUrl}
-                alt={title}
-                fill
-                className="object-cover rounded-t-lg"
-                data-ai-hint={article.imageHint}
-              />
-            </div>
-            <div className="relative h-48 w-full mt-4">
-              <video controls className="w-full h-full object-cover rounded-t-lg">
-                  <source src={article.videoUrl} type="video/mp4" />
-                  {t('videoNotSupported')}
-              </video>
-            </div>
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 text-xs">
-                <span className="flex items-center gap-1.5"><Clock className="h-3 w-3" /> {new Date(article.date).toLocaleDateString()}</span>
-                <span className="flex items-center gap-1.5"><Globe className="h-3 w-3" /> {article.source}</span>
-                <span className="flex items-center gap-1.5"><Mountain className="h-3 w-3" /> {article.region}</span>
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{content}</p>
-               <div className={cn("text-sm p-2 rounded-md border text-center font-medium", getSentimentClasses(article.sentiment))}>
-                {t(article.sentiment.toLowerCase() as 'positive' | 'negative' | 'neutral')}
-              </div>
-            </CardContent>
-          </Card>
-        )
-      })}
     </div>
   );
 }
@@ -191,16 +160,12 @@ export default function Home({ searchParams }: PageProps) {
         </aside>
         <section>
            <Tabs defaultValue="timeline" className="w-full">
-            <TabsList className="mb-6 grid w-full grid-cols-3">
+            <TabsList className="mb-6 grid w-full grid-cols-2">
               <TabsTrigger value="timeline">{t('eventTimeline')}</TabsTrigger>
-              <TabsTrigger value="articles">{t('articleFeed')}</TabsTrigger>
               <TabsTrigger value="report">{t('aiSummaryReport')}</TabsTrigger>
             </TabsList>
             <TabsContent value="timeline">
               <TimelineView events={timelineEvents} />
-            </TabsContent>
-            <TabsContent value="articles">
-              <ArticleView articles={filteredArticles} />
             </TabsContent>
             <TabsContent value="report">
               <ReportGenerator articles={filteredArticles} />
