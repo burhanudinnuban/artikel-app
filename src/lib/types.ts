@@ -1,0 +1,33 @@
+export type Region = "Aceh" | "North Sumatra" | "West Sumatra";
+export type MediaType = "Online News" | "Social Media" | "Press Release";
+export type Sentiment = "Positive" | "Negative" | "Neutral";
+
+export interface Article {
+  id: string;
+  title: string;
+  source: string;
+  date: string; // ISO 8601 format
+  content: string;
+  imageUrl: string;
+  imageHint: string;
+  region: Region;
+  mediaType: MediaType;
+  sentiment: Sentiment;
+  sentimentReason: string;
+}
+
+export interface GovernmentResponse {
+  id: string;
+  title: string;
+  source: string; // e.g., BNPB, Ministry of Social Affairs
+  date: string; // ISO 8601 format
+  content: string;
+}
+
+export type TimelineEvent = (Article | GovernmentResponse) & { type: 'article' | 'response' };
+
+export interface FilterOptions {
+  regions: Region[];
+  mediaTypes: MediaType[];
+  sources: string[];
+}

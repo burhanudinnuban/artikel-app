@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "flood-aerial-1",
+      "description": "Aerial view of a flooded village",
+      "imageUrl": "https://images.unsplash.com/photo-1685345411594-3c471383cc00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG9vZCUyMGFlcmlhbHxlbnwwfHx8fDE3NjU2Mjk1MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flood aerial"
+    },
+    {
+      "id": "rescue-operation-2",
+      "description": "Rescue workers helping people in a boat",
+      "imageUrl": "https://images.unsplash.com/photo-1755090852945-cdbc4efa28ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNjdWUlMjBib2F0fGVufDB8fHx8MTc2NTYyOTUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rescue boat"
+    },
+    {
+      "id": "aid-distribution-3",
+      "description": "Distribution of aid packages to flood victims",
+      "imageUrl": "https://images.unsplash.com/photo-1765018028697-2baae4577cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaWQlMjBkaXN0cmlidXRpb258ZW58MHx8fHwxNzY1NjI5NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aid distribution"
+    },
+    {
+      "id": "government-press-conference-4",
+      "description": "Government official at a press conference",
+      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVzcyUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzY1NTI3NTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "press conference"
+    },
+    {
+      "id": "social-media-feed-5",
+      "description": "A phone showing a social media feed about the flood",
+      "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjU2MTcwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media"
+    },
+    {
+      "id": "damaged-homes-6",
+      "description": "View of houses damaged by floodwaters",
+      "imageUrl": "https://images.unsplash.com/photo-1679999407474-310e49dbad7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYW1hZ2VkJTIwaG91c2V8ZW58MHx8fHwxNzY1NjI5NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "damaged house"
+    }
+  ]
 }
