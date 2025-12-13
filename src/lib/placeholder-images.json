@@ -1,40 +1,40 @@
 {
   "placeholderImages": [
     {
-      "id": "volcano-eruption-1",
-      "description": "An erupting volcano spewing ash.",
-      "imageUrl": "https://images.unsplash.com/photo-1594994235453-2c1146c9a349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2b2xjYW5vJTIwZXJ1cHRpb258ZW58MHx8fHwxNzY1NjMwMDYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "volcano eruption"
+      "id": "flood-destruction-1",
+      "description": "Destroyed village after a flash flood.",
+      "imageUrl": "https://images.unsplash.com/photo-1576013358994-3f9302b885b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmbG9vZHxlbnwwfHx8fDE3NjU2MzA1NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flood destruction"
     },
     {
-      "id": "landslide-search-2",
-      "description": "Search and rescue team at a landslide.",
-      "imageUrl": "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNjdWUlMjB0ZWFtfGVufDB8fHx8MTc2NTYzMDEwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rescue team"
+      "id": "deforestation-impact-2",
+      "description": "An aerial view of a deforested area next to a lush forest.",
+      "imageUrl": "https://images.unsplash.com/photo-1542855938-1e58a4925764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZWZvcmVzdGF0aW9ufGVufDB8fHx8MTc2NTYzMDU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "deforestation aerial"
+    },
+    {
+      "id": "social-media-panic-3",
+      "description": "A person looking at a smartphone with a concerned expression, social media feed visible.",
+      "imageUrl": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjU2MzA2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social media"
+    },
+    {
+      "id": "government-press-conference-4",
+      "description": "A politician speaking at a press conference podium with flags in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1588705322329-8a8863dc31da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVzcyUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzY1NjMwNjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "press conference"
+    },
+    {
+      "id": "media-analysis-5",
+      "description": "A person analyzing charts and graphs on a computer screen, representing media analysis.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3N8ZW58MHx8fHwxNzY1NjMwNjUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analysis"
     },
     {
       "id": "community-kitchen-3",
       "description": "Volunteers cooking in a large community kitchen.",
       "imageUrl": "https://images.unsplash.com/photo-1591115764832-9646c078a6f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBraXRjaGVufGVufDB8fHx8MTc2NTYzMDEzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "community kitchen"
-    },
-    {
-      "id": "infrastructure-repair-4",
-      "description": "Construction workers repairing a damaged bridge.",
-      "imageUrl": "https://images.unsplash.com/photo-1581193344445-565b93d047b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2FkJTIwcmVwYWlyfGVufDB8fHx8MTc2NTYzMDE4NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "road repair"
-    },
-    {
-      "id": "online-petition-5",
-      "description": "A person signing an online petition on a laptop.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBwZXRpdGlvbnxlbnwwfHx8fDE3NjU2MzAyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "online petition"
-    },
-    {
-      "id": "aid-plane-6",
-      "description": "Cargo plane being unloaded with humanitarian aid.",
-      "imageUrl": "https://images.unsplash.com/photo-1608791583995-58a101eb202e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcm15JTIwY2FyZ28lMjBwbGFuZXxlbnwwfHx8fDE3NjU2MzAyMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cargo plane"
     }
   ]
 }
