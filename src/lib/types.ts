@@ -10,6 +10,7 @@ export interface Article {
   content: string;
   imageUrl: string;
   imageHint: string;
+  videoUrl: string;
   region: Region;
   mediaType: MediaType;
   sentiment: Sentiment;

@@ -90,6 +90,12 @@ function ArticleView({ articles }: { articles: Article[] }) {
               data-ai-hint={article.imageHint}
             />
           </div>
+          <div className="relative h-48 w-full mt-4">
+            <video controls className="w-full h-full object-cover rounded-t-lg">
+                <source src={article.videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+          </div>
           <CardHeader>
             <CardTitle>{article.title}</CardTitle>
             <CardDescription className="flex flex-wrap items-center gap-x-4 gap-y-1 pt-1 text-xs">
