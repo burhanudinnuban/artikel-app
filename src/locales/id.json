@@ -15,10 +15,8 @@
   "allSources": "Semua Sumber",
   "clearAllFilters": "Hapus Semua Filter",
   "eventTimeline": "Linimasa Acara",
-  "articleFeed": "Umpan Artikel",
   "aiSummaryReport": "Laporan Ringkasan AI",
   "noEvents": "Tidak ada acara yang cocok dengan filter saat ini.",
-  "noArticles": "Tidak ada artikel yang cocok dengan filter saat ini.",
   "sentimentAnalysis": "Analisis Sentimen",
   "positive": "Positif",
   "negative": "Negatif",
@@ -31,5 +29,6 @@
   "error": "Kesalahan",
   "unknownError": "Terjadi kesalahan yang tidak diketahui.",
   "generatedSummary": "Ringkasan yang Dihasilkan",
-  "videoNotSupported": "Browser Anda tidak mendukung tag video."
+  "videoNotSupported": "Browser Anda tidak mendukung tag video.",
+  "downloadWord": "Unduh sebagai Word"
 }

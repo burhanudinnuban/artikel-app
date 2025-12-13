@@ -15,10 +15,8 @@
   "allSources": "All Sources",
   "clearAllFilters": "Clear All Filters",
   "eventTimeline": "Event Timeline",
-  "articleFeed": "Article Feed",
   "aiSummaryReport": "AI Summary Report",
   "noEvents": "No events match the current filters.",
-  "noArticles": "No articles match the current filters.",
   "sentimentAnalysis": "Sentiment Analysis",
   "positive": "Positive",
   "negative": "Negative",
@@ -31,5 +29,6 @@
   "error": "Error",
   "unknownError": "An unknown error occurred.",
   "generatedSummary": "Generated Summary",
-  "videoNotSupported": "Your browser does not support the video tag."
+  "videoNotSupported": "Your browser does not support the video tag.",
+  "downloadWord": "Download as Word"
 }

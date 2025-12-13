@@ -6,8 +6,10 @@ import type { Article } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Bot, FileText, Loader2, TriangleAlert } from 'lucide-react';
+import { Bot, FileText, Loader2, TriangleAlert, Download } from 'lucide-react';
 import { useI18n } from '@/lib/i18n';
+import { Document, Packer, Paragraph, TextRun } from 'docx';
+import { saveAs } from 'file-saver';
 
 interface ReportGeneratorProps {
   articles: Article[];
@@ -29,6 +31,40 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
       } else {
         setError(result.error ?? t('unknownError'));
       }
+    });
+  };
+
+  const handleDownloadWord = () => {
+    if (!summary) return;
+
+    const doc = new Document({
+      sections: [{
+        properties: {},
+        children: [
+          new Paragraph({
+            children: [
+              new TextRun({
+                text: t('generatedSummary'),
+                bold: true,
+                size: 28,
+              }),
+            ],
+            spacing: {
+              after: 240,
+            }
+          }),
+          ...summary.split('\n').map(text => new Paragraph({
+            children: [new TextRun(text)],
+            spacing: {
+              after: 120,
+            }
+          })),
+        ],
+      }],
+    });
+
+    Packer.toBlob(doc).then(blob => {
+      saveAs(blob, "ai-summary-report.docx");
     });
   };
 
@@ -75,7 +111,13 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
 
         {summary && (
           <div className="mt-6">
-            <h3 className="text-lg font-semibold mb-2">{t('generatedSummary')}</h3>
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="text-lg font-semibold">{t('generatedSummary')}</h3>
+              <Button variant="outline" size="sm" onClick={handleDownloadWord}>
+                <Download className="mr-2 h-4 w-4" />
+                {t('downloadWord')}
+              </Button>
+            </div>
             <div className="prose prose-sm max-w-none p-4 bg-muted/50 rounded-lg border">
                 <p className="whitespace-pre-wrap font-sans">{summary}</p>
             </div>
