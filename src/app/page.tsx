@@ -3,6 +3,7 @@
 import { Logo } from '@/components/icons';
 import { useI18n } from '@/lib/i18n';
 import DashboardHeader from '@/components/dashboard-header';
+import Image from 'next/image';
 
 function Section({ title, children, id }: { title: string; children: React.ReactNode; id: string }) {
   return (
@@ -70,6 +71,12 @@ export default function JournalPage() {
             <Section title="Pendahuluan" id="pendahuluan">
               <SubSection title="1. Latar Belakang" id="latar-belakang">
                 <p>Bencana banjir bandang yang melanda wilayah pesisir barat dan pegunungan di Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menjadi tonggak krisis lingkungan terdahsyat di penghujung tahun ini. Kejadian yang berlangsung secara simultan di tiga provinsi tersebut telah memakan korban jiwa yang sangat besar, merusak ribuan infrastruktur publik, dan memaksa puluhan ribu warga mengungsi. Karakteristik banjir bandang ini sangat destruktif karena membawa material kayu, bebatuan, dan lumpur pekat yang menyapu pemukiman dalam waktu yang sangat singkat.</p>
+                
+                <figure className="my-8">
+                  <Image src="https://picsum.photos/seed/flood-destruction/800/450" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="flood destruction" />
+                  <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Kerusakan masif akibat banjir bandang di salah satu wilayah terdampak.</figcaption>
+                </figure>
+
                 <p>Secara valid, bencana ini merupakan hasil dari perpaduan faktor alam dan kegagalan pengelolaan lingkungan. Peningkatan curah hujan ekstrem yang terjadi di sepanjang Bukit Barisan memicu kejenuhan tanah di kawasan hulu. Namun, skala kehancuran yang masif ini tidak dapat dipisahkan dari persoalan deforestasi dan alih fungsi lahan di kawasan hutan lindung yang berfungsi sebagai penyangga air. Lemahnya pengawasan terhadap izin pembukaan lahan mengakibatkan daerah aliran sungai (DAS) kehilangan daya dukung, sehingga air hujan langsung berubah menjadi aliran permukaan (run-off) yang membawa debris mematikan.</p>
                 <p>Di sisi lain, peristiwa ini menyingkap kegagalan dalam sistem komunikasi risiko bencana. Meskipun teknologi pengindraan jauh telah memberikan peringatan dini terkait cuaca ekstrem, informasi tersebut seringkali tidak tersampaikan secara efektif atau tidak dipahami oleh masyarakat di akar rumput. Terjadi kesenjangan informasi (information gap) antara otoritas terkait dengan warga yang tinggal di daerah rawan. Selain itu, arus informasi di media sosial pada akhir November 2025 menunjukkan dominasi narasi kepanikan dibandingkan instruksi evakuasi yang sistematis, yang justru berpotensi meningkatkan jumlah korban jiwa akibat disinformasi di tengah krisis.</p>
                 <p>Dalam perspektif komunikasi massa, media memegang peran sentral namun ambigu. Media massa berfungsi sebagai saluran utama penyebaran informasi tanggap darurat, namun seringkali terjebak dalam pembingkaian (framing) yang bersifat sensasional atau hanya menyalahkan faktor alam tanpa mengkritisi kebijakan tata ruang yang salah arah. Oleh karena itu, diperlukan analisis mendalam mengenai bagaimana komunikasi massa dikelola selama bencana November 2025 ini berlangsung, baik untuk kepentingan mobilisasi bantuan maupun sebagai instrumen tekanan publik agar pemerintah melakukan pembenahan ekologi secara struktural.</p>
@@ -111,9 +118,24 @@ export default function JournalPage() {
                         <li><strong>Gap Informasi Spasial:</strong> Terdapat temuan bahwa media memberikan porsi pemberitaan 60% lebih banyak pada kasus di Sumatera Barat (Padang) dibandingkan Aceh Tamiang, meskipun jumlah korban di Aceh setara. Hal ini membuktikan adanya bias geografis dalam Agenda Setting di mana aksesibilitas jurnalis ke lokasi menentukan seberapa besar sebuah wilayah dianggap "penting" dalam agenda nasional.</li>
                         <li><strong>Visual Framing:</strong> Gambar udara yang menunjukkan kontras antara lahan cokelat (longsor) dan sisa hutan hijau menjadi ikon visual yang paling sering diulang. Visual ini memperkuat hipotesis bahwa media ingin menanamkan persepsi di masyarakat bahwa Sumatera sedang dalam kondisi "Darurat Ekologis".</li>
                     </ul>
+                     <figure className="my-8">
+                      <Image src="https://picsum.photos/seed/deforestation/800/450" alt="Deforestasi dari udara" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="deforestation aerial view" />
+                      <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan kontras antara area deforestasi dan hutan yang tersisa.</figcaption>
+                    </figure>
                 </SubSection>
                 <SubSection title="2. Pembahasan Kasus dan Permasalahan Komunikasi" id="pembahasan-kasus">
                     <p>Bencana banjir bandang yang melanda wilayah Aceh, Sumatera Utara, dan Sumatera Barat pada November 2025 bukan sekadar peristiwa alam, melainkan sebuah ruang pertarungan narasi. Melalui teori Agenda Setting, kita melihat bagaimana media massa berhasil mengangkat isu ini dari sekadar "berita daerah" menjadi "krisis nasional". Liputan 24 jam mengenai hilangnya Desa Sekumur dan meningkatnya angka kematian memaksa pemerintah pusat untuk menunda agenda lain dan memusatkan seluruh sumber daya negara ke pulau Sumatera. Media tidak hanya melaporkan duka, tetapi mendikte prioritas kebijakan nasional.</p>
+                     <div className="my-8">
+                        <video
+                            className="w-full rounded-lg shadow-lg"
+                            controls
+                            src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoy.mp4"
+                            poster="https://picsum.photos/seed/news-report/800/450"
+                            data-ai-hint="news report"
+                        >
+                            Cuplikan video liputan berita mengenai dampak banjir bandang.
+                        </video>
+                    </div>
                     <p>Namun, di balik penentuan agenda tersebut, terjadi kontestasi dalam Framing (pembingkaian). Terdapat dua bingkai utama yang saling beradu. Pertama, Frame Teknis-Meteorologi yang dominan digunakan pemerintah; narasi ini membingkai bencana sebagai akibat mutlak dari curah hujan ekstrem dan siklon. Bingkai ini cenderung memosisikan manusia sebagai korban pasif dari "kemarahan alam" guna meredam kritik politik.</p>
                     <p>Kedua, media massa dan aktivis secara agresif menggunakan Frame Ekologis-Akuntabilitas. Mereka membingkai bencana ini sebagai "dosa ekologis" akibat alih fungsi lahan dan penggundulan hutan di hulu sungai. Dengan menampilkan visual perbandingan hutan yang gundul dan pemukiman yang tersapu lumpur, media menggiring publik untuk menyimpulkan bahwa bencana ini adalah kegagalan tata kelola manusia, bukan sekadar takdir cuaca.</p>
                     <p>Permasalahan komunikasi muncul ketika terjadi bias geografis dalam pemberitaan. Wilayah yang mudah diakses jurnalis (seperti Sumatera Barat) mendapatkan porsi agenda setting yang jauh lebih besar dibandingkan wilayah terpencil di Aceh. Akibatnya, distribusi bantuan pun cenderung mengikuti intensitas pemberitaan media, bukan murni berdasarkan tingkat keparahan di lapangan.</p>
@@ -183,4 +205,3 @@ export default function JournalPage() {
 
     </div>
   );
-}
