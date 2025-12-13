@@ -20,13 +20,6 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<Language>('id');
 
-  useEffect(() => {
-    const browserLang = navigator.language.split('-')[0];
-    if (browserLang === 'en') {
-      setLanguage('en');
-    }
-  }, []);
-
   const t = (key: string, replacements?: { [key: string]: string | number }) => {
     let translation = translations[language][key as keyof typeof translations[Language]] || key;
     if (replacements) {
