@@ -204,4 +204,4 @@ export default function JournalPage() {
        </footer>
 
     </div>
-  );
+  )};
