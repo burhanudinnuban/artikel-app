@@ -126,15 +126,7 @@ export default function JournalPage() {
                 <SubSection title="2. Pembahasan Kasus dan Permasalahan Komunikasi" id="pembahasan-kasus">
                     <p>Bencana banjir bandang yang melanda wilayah Aceh, Sumatera Utara, dan Sumatera Barat pada November 2025 bukan sekadar peristiwa alam, melainkan sebuah ruang pertarungan narasi. Melalui teori Agenda Setting, kita melihat bagaimana media massa berhasil mengangkat isu ini dari sekadar "berita daerah" menjadi "krisis nasional". Liputan 24 jam mengenai hilangnya Desa Sekumur dan meningkatnya angka kematian memaksa pemerintah pusat untuk menunda agenda lain dan memusatkan seluruh sumber daya negara ke pulau Sumatera. Media tidak hanya melaporkan duka, tetapi mendikte prioritas kebijakan nasional.</p>
                      <div className="my-8">
-                        <video
-                            className="w-full rounded-lg shadow-lg"
-                            controls
-                            src="https://youtu.be/EYNNPNNQ5MQ"
-                            poster="https://picsum.photos/seed/news-report/800/450"
-                            data-ai-hint="news report"
-                        >
-                            Cuplikan video liputan berita mengenai dampak banjir bandang.
-                        </video>
+                     <iframe width="922" height="350" src="https://www.youtube.com/embed/EYNNPNNQ5MQ" title="Detik-detik Ganasnya Banjir Bandang Hancurkan Tanggul di Aceh Tamiang, Warga Menjerit Minta Bantuan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <p>Namun, di balik penentuan agenda tersebut, terjadi kontestasi dalam Framing (pembingkaian). Terdapat dua bingkai utama yang saling beradu. Pertama, Frame Teknis-Meteorologi yang dominan digunakan pemerintah; narasi ini membingkai bencana sebagai akibat mutlak dari curah hujan ekstrem dan siklon. Bingkai ini cenderung memosisikan manusia sebagai korban pasif dari "kemarahan alam" guna meredam kritik politik.</p>
                     <p>Kedua, media massa dan aktivis secara agresif menggunakan Frame Ekologis-Akuntabilitas. Mereka membingkai bencana ini sebagai "dosa ekologis" akibat alih fungsi lahan dan penggundulan hutan di hulu sungai. Dengan menampilkan visual perbandingan hutan yang gundul dan pemukiman yang tersapu lumpur, media menggiring publik untuk menyimpulkan bahwa bencana ini adalah kegagalan tata kelola manusia, bukan sekadar takdir cuaca.</p>
