@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Bot, FileText, Loader2, TriangleAlert } from 'lucide-react';
+import { useI18n } from '@/lib/i18n';
 
 interface ReportGeneratorProps {
   articles: Article[];
@@ -16,16 +17,17 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
   const [summary, setSummary] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
+  const { t, language } = useI18n();
 
   const handleGenerateReport = () => {
     startTransition(async () => {
       setError(null);
       setSummary(null);
-      const result = await generateReportAction(articles);
+      const result = await generateReportAction(articles, language);
       if (result.success) {
         setSummary(result.summary ?? null);
       } else {
-        setError(result.error ?? 'An unknown error occurred.');
+        setError(result.error ?? t('unknownError'));
       }
     });
   };
@@ -38,9 +40,9 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
                  <Bot className="h-8 w-8" />
             </div>
             <div>
-                <CardTitle>Generate AI Summary Report</CardTitle>
+                <CardTitle>{t('generateAiReport')}</CardTitle>
                 <CardDescription>
-                Analyze the filtered articles to generate a concise summary of media trends and key insights.
+                {t('generateAiReportDescription')}
                 </CardDescription>
             </div>
         </div>
@@ -49,16 +51,16 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
         <div className="flex flex-col items-center justify-center rounded-lg border border-dashed p-8 text-center space-y-4">
           <FileText className="h-12 w-12 text-muted-foreground" />
           <p className="font-semibold">
-            {articles.length} article(s) selected for analysis.
+            {t('articlesSelected', { count: articles.length })}
           </p>
           <Button onClick={handleGenerateReport} disabled={isPending || articles.length === 0}>
             {isPending ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Generating...
+                {t('generating')}
               </>
             ) : (
-              'Generate Report'
+              t('generateReport')
             )}
           </Button>
         </div>
@@ -66,14 +68,14 @@ export default function ReportGenerator({ articles }: ReportGeneratorProps) {
         {error && (
            <Alert variant="destructive" className="mt-6">
              <TriangleAlert className="h-4 w-4" />
-             <AlertTitle>Error</AlertTitle>
+             <AlertTitle>{t('error')}</AlertTitle>
              <AlertDescription>{error}</AlertDescription>
            </Alert>
         )}
 
         {summary && (
           <div className="mt-6">
-            <h3 className="text-lg font-semibold mb-2">Generated Summary</h3>
+            <h3 className="text-lg font-semibold mb-2">{t('generatedSummary')}</h3>
             <div className="prose prose-sm max-w-none p-4 bg-muted/50 rounded-lg border">
                 <p className="whitespace-pre-wrap font-sans">{summary}</p>
             </div>

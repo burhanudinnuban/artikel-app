@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import type { FilterOptions } from '@/lib/types';
+import { useI18n } from '@/lib/i18n';
 
 interface FiltersProps {
   options: FilterOptions;
@@ -23,6 +24,7 @@ export default function Filters({ options, isMobile = false }: FiltersProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const { t } = useI18n();
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -57,26 +59,26 @@ export default function Filters({ options, isMobile = false }: FiltersProps) {
   return (
     <div className="space-y-6">
       <form onSubmit={handleSearch} className="space-y-2">
-        <Label htmlFor="search">Keyword Search</Label>
+        <Label htmlFor="search">{t('keywordSearch')}</Label>
         <Input 
           id="search" 
           name="q"
-          placeholder="Search articles & responses..." 
+          placeholder={t('searchPlaceholder')}
           defaultValue={searchParams.get('q') || ''} 
         />
       </form>
 
       <div className="space-y-2">
-        <Label htmlFor="region">Region</Label>
+        <Label htmlFor="region">{t('region')}</Label>
         <Select
           onValueChange={(value) => handleSelectChange('region', value)}
           defaultValue={searchParams.get('region') || 'all'}
         >
           <SelectTrigger id="region">
-            <SelectValue placeholder="All Regions" />
+            <SelectValue placeholder={t('allRegions')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Regions</SelectItem>
+            <SelectItem value="all">{t('allRegions')}</SelectItem>
             {options.regions.map((region) => (
               <SelectItem key={region} value={region}>
                 {region}
@@ -87,19 +89,19 @@ export default function Filters({ options, isMobile = false }: FiltersProps) {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="mediaType">Media Type</Label>
+        <Label htmlFor="mediaType">{t('mediaType')}</Label>
         <Select
           onValueChange={(value) => handleSelectChange('mediaType', value)}
           defaultValue={searchParams.get('mediaType') || 'all'}
         >
           <SelectTrigger id="mediaType">
-            <SelectValue placeholder="All Media Types" />
+            <SelectValue placeholder={t('allMediaTypes')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Media Types</SelectItem>
+            <SelectItem value="all">{t('allMediaTypes')}</SelectItem>
             {options.mediaTypes.map((type) => (
               <SelectItem key={type} value={type}>
-                {type}
+                {t(type.toLowerCase().replace(/ /g, ''))}
               </SelectItem>
             ))}
           </SelectContent>
@@ -107,16 +109,16 @@ export default function Filters({ options, isMobile = false }: FiltersProps) {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="source">News Source</Label>
+        <Label htmlFor="source">{t('newsSource')}</Label>
         <Select
           onValueChange={(value) => handleSelectChange('source', value)}
           defaultValue={searchParams.get('source') || 'all'}
         >
           <SelectTrigger id="source">
-            <SelectValue placeholder="All Sources" />
+            <SelectValue placeholder={t('allSources')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Sources</SelectItem>
+            <SelectItem value="all">{t('allSources')}</SelectItem>
             {options.sources.map((source) => (
               <SelectItem key={source} value={source}>
                 {source}
@@ -127,7 +129,7 @@ export default function Filters({ options, isMobile = false }: FiltersProps) {
       </div>
 
       <Button variant="ghost" onClick={handleClear} className="w-full">
-        Clear All Filters
+        {t('clearAllFilters')}
       </Button>
     </div>
   );
