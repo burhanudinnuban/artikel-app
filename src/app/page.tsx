@@ -1,3 +1,5 @@
+'use client';
+
 import { Logo } from '@/components/icons';
 import { useI18n } from '@/lib/i18n';
 import DashboardHeader from '@/components/dashboard-header';
@@ -48,7 +50,7 @@ export default function JournalPage() {
                   <li><a href="#pendahuluan" className="font-medium text-foreground/80 hover:text-primary transition-colors">Pendahuluan</a></li>
                   <li><a href="#teori" className="font-medium text-foreground/80 hover:text-primary transition-colors">Landasan Teori</a></li>
                   <li><a href="#studi-kasus" className="font-medium text-foreground/80 hover:text-primary transition-colors">Studi Kasus</a></li>
-                  <li><a href="#kesimpulan" className="font-medium text-foreground/80 hovertext-primary transition-colors">Kesimpulan & Rekomendasi</a></li>
+                  <li><a href="#kesimpulan" className="font-medium text-foreground/80 hover:text-primary transition-colors">Kesimpulan & Rekomendasi</a></li>
                   <li><a href="#pustaka" className="font-medium text-foreground/80 hover:text-primary transition-colors">Daftar Pustaka</a></li>
                 </ul>
               </nav>
@@ -159,7 +161,7 @@ export default function JournalPage() {
                         </li>
                     </ol>
                 </SubSection>
-            </section>
+            </Section>
 
             <Section title="Daftar Pustaka" id="pustaka">
                 <ul className="space-y-2 text-sm">
