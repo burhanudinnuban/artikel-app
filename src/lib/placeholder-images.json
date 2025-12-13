@@ -1,40 +1,40 @@
 {
   "placeholderImages": [
     {
-      "id": "flood-aerial-1",
-      "description": "Aerial view of a flooded village",
-      "imageUrl": "https://images.unsplash.com/photo-1685345411594-3c471383cc00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG9vZCUyMGFlcmlhbHxlbnwwfHx8fDE3NjU2Mjk1MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "flood aerial"
+      "id": "volcano-eruption-1",
+      "description": "An erupting volcano spewing ash.",
+      "imageUrl": "https://images.unsplash.com/photo-1594994235453-2c1146c9a349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2b2xjYW5vJTIwZXJ1cHRpb258ZW58MHx8fHwxNzY1NjMwMDYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "volcano eruption"
     },
     {
-      "id": "rescue-operation-2",
-      "description": "Rescue workers helping people in a boat",
-      "imageUrl": "https://images.unsplash.com/photo-1755090852945-cdbc4efa28ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNjdWUlMjBib2F0fGVufDB8fHx8MTc2NTYyOTUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "rescue boat"
+      "id": "landslide-search-2",
+      "description": "Search and rescue team at a landslide.",
+      "imageUrl": "https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNjdWUlMjB0ZWFtfGVufDB8fHx8MTc2NTYzMDEwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rescue team"
     },
     {
-      "id": "aid-distribution-3",
-      "description": "Distribution of aid packages to flood victims",
-      "imageUrl": "https://images.unsplash.com/photo-1765018028697-2baae4577cdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaWQlMjBkaXN0cmlidXRpb258ZW58MHx8fHwxNzY1NjI5NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "aid distribution"
+      "id": "community-kitchen-3",
+      "description": "Volunteers cooking in a large community kitchen.",
+      "imageUrl": "https://images.unsplash.com/photo-1591115764832-9646c078a6f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBraXRjaGVufGVufDB8fHx8MTc2NTYzMDEzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community kitchen"
     },
     {
-      "id": "government-press-conference-4",
-      "description": "Government official at a press conference",
-      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcmVzcyUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzY1NTI3NTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "press conference"
+      "id": "infrastructure-repair-4",
+      "description": "Construction workers repairing a damaged bridge.",
+      "imageUrl": "https://images.unsplash.com/photo-1581193344445-565b93d047b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2FkJTIwcmVwYWlyfGVufDB8fHx8MTc2NTYzMDE4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "road repair"
     },
     {
-      "id": "social-media-feed-5",
-      "description": "A phone showing a social media feed about the flood",
-      "imageUrl": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjU2MTcwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "social media"
+      "id": "online-petition-5",
+      "description": "A person signing an online petition on a laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBwZXRpdGlvbnxlbnwwfHx8fDE3NjU2MzAyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online petition"
     },
     {
-      "id": "damaged-homes-6",
-      "description": "View of houses damaged by floodwaters",
-      "imageUrl": "https://images.unsplash.com/photo-1679999407474-310e49dbad7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYW1hZ2VkJTIwaG91c2V8ZW58MHx8fHwxNzY1NjI5NTEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "damaged house"
+      "id": "aid-plane-6",
+      "description": "Cargo plane being unloaded with humanitarian aid.",
+      "imageUrl": "https://images.unsplash.com/photo-1608791583995-58a101eb202e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcm15JTIwY2FyZ28lMjBwbGFuZXxlbnwwfHx8fDE3NjU2MzAyMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cargo plane"
     }
   ]
 }
