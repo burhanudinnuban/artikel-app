@@ -73,7 +73,7 @@ export default function JournalPage() {
                 <p>Bencana banjir bandang yang melanda wilayah pesisir barat dan pegunungan di Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menjadi tonggak krisis lingkungan terdahsyat di penghujung tahun ini. Kejadian yang berlangsung secara simultan di tiga provinsi tersebut telah memakan korban jiwa yang sangat besar, merusak ribuan infrastruktur publik, dan memaksa puluhan ribu warga mengungsi. Karakteristik banjir bandang ini sangat destruktif karena membawa material kayu, bebatuan, dan lumpur pekat yang menyapu pemukiman dalam waktu yang sangat singkat.</p>
                 
                 <figure className="my-8">
-                  <Image src="https://picsum.photos/seed/flood-destruction/800/450" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="flood destruction" />
+                  <Image src="https://th.bing.com/th?id=OIF.84%2F6%2F%2BoFSXkvP4EM1n3jHw&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="flood destruction" />
                   <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Kerusakan masif akibat banjir bandang di salah satu wilayah terdampak.</figcaption>
                 </figure>
 
@@ -119,7 +119,7 @@ export default function JournalPage() {
                         <li><strong>Visual Framing:</strong> Gambar udara yang menunjukkan kontras antara lahan cokelat (longsor) dan sisa hutan hijau menjadi ikon visual yang paling sering diulang. Visual ini memperkuat hipotesis bahwa media ingin menanamkan persepsi di masyarakat bahwa Sumatera sedang dalam kondisi "Darurat Ekologis".</li>
                     </ul>
                      <figure className="my-8">
-                      <Image src="https://picsum.photos/seed/deforestation/800/450" alt="Deforestasi dari udara" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="deforestation aerial view" />
+                      <Image src="https://tse2.mm.bing.net/th/id/OIP.js2GUqYRzMTU1Vwamo-kDgHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deforestasi dari udara" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="deforestation aerial view" />
                       <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan kontras antara area deforestasi dan hutan yang tersisa.</figcaption>
                     </figure>
                 </SubSection>
@@ -129,7 +129,7 @@ export default function JournalPage() {
                         <video
                             className="w-full rounded-lg shadow-lg"
                             controls
-                            src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoy.mp4"
+                            src="https://youtu.be/EYNNPNNQ5MQ"
                             poster="https://picsum.photos/seed/news-report/800/450"
                             data-ai-hint="news report"
                         >
