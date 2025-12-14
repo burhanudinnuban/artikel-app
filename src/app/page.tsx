@@ -74,7 +74,7 @@ export default function JournalPage() {
                 
                 <figure className="my-8">
                   <Image src="https://th.bing.com/th?id=OIF.84%2F6%2F%2BoFSXkvP4EM1n3jHw&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="flood destruction" />
-                  <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Kerusakan masif akibat banjir bandang di salah satu wilayah terdampak.</figcaption>
+                  <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan skala kerusakan masif di salah satu desa di Aceh, di mana material banjir bandang berupa lumpur dan kayu gelondongan menyapu bersih pemukiman warga, menyoroti dampak destruktif dari bencana tersebut.</figcaption>
                 </figure>
 
                 <p>Secara valid, bencana ini merupakan hasil dari perpaduan faktor alam dan kegagalan pengelolaan lingkungan. Peningkatan curah hujan ekstrem yang terjadi di sepanjang Bukit Barisan memicu kejenuhan tanah di kawasan hulu. Namun, skala kehancuran yang masif ini tidak dapat dipisahkan dari persoalan deforestasi dan alih fungsi lahan di kawasan hutan lindung yang berfungsi sebagai penyangga air. Lemahnya pengawasan terhadap izin pembukaan lahan mengakibatkan daerah aliran sungai (DAS) kehilangan daya dukung, sehingga air hujan langsung berubah menjadi aliran permukaan (run-off) yang membawa debris mematikan.</p>
@@ -120,13 +120,16 @@ export default function JournalPage() {
                     </ul>
                      <figure className="my-8">
                       <Image src="https://tse2.mm.bing.net/th/id/OIP.js2GUqYRzMTU1Vwamo-kDgHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deforestasi dari udara" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="deforestation aerial view" />
-                      <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan kontras antara area deforestasi dan hutan yang tersisa.</figcaption>
+                      <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Contoh framing visual yang kuat: citra satelit memperlihatkan kontras tajam antara area deforestasi (coklat) yang menjadi sumber longsoran dan hutan primer (hijau) yang masih utuh, memperkuat narasi 'dosa ekologis' di media.</figcaption>
                     </figure>
                 </SubSection>
                 <SubSection title="2. Pembahasan Kasus dan Permasalahan Komunikasi" id="pembahasan-kasus">
                     <p>Bencana banjir bandang yang melanda wilayah Aceh, Sumatera Utara, dan Sumatera Barat pada November 2025 bukan sekadar peristiwa alam, melainkan sebuah ruang pertarungan narasi. Melalui teori Agenda Setting, kita melihat bagaimana media massa berhasil mengangkat isu ini dari sekadar "berita daerah" menjadi "krisis nasional". Liputan 24 jam mengenai hilangnya Desa Sekumur dan meningkatnya angka kematian memaksa pemerintah pusat untuk menunda agenda lain dan memusatkan seluruh sumber daya negara ke pulau Sumatera. Media tidak hanya melaporkan duka, tetapi mendikte prioritas kebijakan nasional.</p>
                      <div className="my-8">
-                     <iframe width="922" height="350" src="https://www.youtube.com/embed/EYNNPNNQ5MQ" title="Detik-detik Ganasnya Banjir Bandang Hancurkan Tanggul di Aceh Tamiang, Warga Menjerit Minta Bantuan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div className="aspect-video w-full">
+                            <iframe className="w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/EYNNPNNQ5MQ" title="Detik-detik Ganasnya Banjir Bandang Hancurkan Tanggul di Aceh Tamiang, Warga Menjerit Minta Bantuan" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+                        <p className="text-center text-sm italic mt-2 text-muted-foreground">Cuplikan video amatir yang viral di media sosial, menunjukkan kepanikan warga saat tanggul jebol di Aceh Tamiang. Video semacam ini, dengan muatan emosional yang tinggi, berkontribusi pada narasi human interest frame dan mempercepat mobilisasi bantuan dari masyarakat sipil.</p>
                     </div>
                     <p>Namun, di balik penentuan agenda tersebut, terjadi kontestasi dalam Framing (pembingkaian). Terdapat dua bingkai utama yang saling beradu. Pertama, Frame Teknis-Meteorologi yang dominan digunakan pemerintah; narasi ini membingkai bencana sebagai akibat mutlak dari curah hujan ekstrem dan siklon. Bingkai ini cenderung memosisikan manusia sebagai korban pasif dari "kemarahan alam" guna meredam kritik politik.</p>
                     <p>Kedua, media massa dan aktivis secara agresif menggunakan Frame Ekologis-Akuntabilitas. Mereka membingkai bencana ini sebagai "dosa ekologis" akibat alih fungsi lahan dan penggundulan hutan di hulu sungai. Dengan menampilkan visual perbandingan hutan yang gundul dan pemukiman yang tersapu lumpur, media menggiring publik untuk menyimpulkan bahwa bencana ini adalah kegagalan tata kelola manusia, bukan sekadar takdir cuaca.</p>
@@ -196,4 +199,7 @@ export default function JournalPage() {
        </footer>
 
     </div>
-  )};
+  );
+}
+
+    
