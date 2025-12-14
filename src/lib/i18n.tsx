@@ -2,10 +2,15 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import en from '@/locales/en.json';
-import id from '@/locales/id.json';
 
-const translations = { en, id };
+const translations = {
+  en: {
+    appTitle: 'Journal of Disaster Analysis',
+  },
+  id: {
+    appTitle: 'Jurnal Analisis Bencana',
+  }
+};
 
 type Language = 'en' | 'id';
 
