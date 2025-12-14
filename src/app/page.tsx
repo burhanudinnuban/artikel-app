@@ -74,7 +74,7 @@ export default function JournalPage() {
                 <p>Bencana banjir bandang yang melanda wilayah pesisir barat dan pegunungan di Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menjadi tonggak krisis lingkungan terdahsyat di penghujung tahun ini. Kejadian yang berlangsung secara simultan di tiga provinsi tersebut telah memakan korban jiwa yang sangat besar, merusak ribuan infrastruktur publik, dan memaksa puluhan ribu warga mengungsi. Karakteristik banjir bandang ini sangat destruktif karena membawa material kayu, bebatuan, dan lumpur pekat yang menyapu pemukiman dalam waktu yang sangat singkat.</p>
                 
                 <figure className="my-8">
-                  <Image src="/update-bajir.jpeg" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full object-cover" data-ai-hint="flood destruction" />
+                  <Image src="/assets/update-bajir.jpeg" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full object-cover" data-ai-hint="flood destruction" />
                   <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan skala kerusakan masif di salah satu desa di Aceh, di mana material banjir bandang berupa lumpur dan kayu gelondongan menyapu bersih pemukiman warga, menyoroti dampak destruktif dari bencana tersebut.</figcaption>
                 </figure>
 
@@ -117,15 +117,15 @@ export default function JournalPage() {
                     <p>Temuan dari analisis isi media menunjukkan beberapa pola framing yang signifikan dalam pemberitaan bencana banjir bandang di Sumatera.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
                         <figure>
-                            <Image src="/pemerintah-tidak-niat.jpeg" alt="Kritik terhadap pemerintah" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="government criticism" />
+                            <Image src="/assets/pemerintah-tidak-niat.jpeg" alt="Kritik terhadap pemerintah" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="government criticism" />
                             <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Meme yang beredar di media sosial mengkritik respons pemerintah yang dianggap lamban dan tidak serius.</figcaption>
                         </figure>
                         <figure>
-                            <Image src="/dpr-gak-guna.jpeg" alt="Kritik terhadap DPR" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="parliament criticism" />
+                            <Image src="/assets/dpr-gak-guna.jpeg" alt="Kritik terhadap DPR" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="parliament criticism" />
                             <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Sentimen negatif publik juga ditujukan kepada parlemen yang dinilai tidak memberikan kontribusi signifikan.</figcaption>
                         </figure>
                         <figure>
-                             <Image src="/pencitraan.jpeg" alt="Tudingan pencitraan" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="political imaging" />
+                             <Image src="/assets/pencitraan.jpeg" alt="Tudingan pencitraan" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="political imaging" />
                             <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Kunjungan pejabat ke lokasi bencana seringkali dibingkai media sebagai ajang pencitraan politik.</figcaption>
                         </figure>
                     </div>
@@ -140,14 +140,14 @@ export default function JournalPage() {
                      <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                         <figure>
                             <video className="w-full h-full rounded-lg shadow-lg" controls>
-                                <source src="/bajir-ditangan-amatir.mp4" type="video/mp4" />
+                                <source src="/assets/bajir-ditangan-amatir.mp4" type="video/mp4" />
                                 Browser Anda tidak mendukung tag video.
                             </video>
                             <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Video amatir menunjukkan kepanikan warga, menyoroti kurangnya instruksi evakuasi yang jelas dan terkoordinasi.</figcaption>
                         </figure>
                          <figure>
                             <video className="w-full h-full rounded-lg shadow-lg" controls>
-                                <source src="/banjir-jelang-sby.mp4" type="video/mp4" />
+                                <source src="/assets/banjir-jelang-sby.mp4" type="video/mp4" />
                                 Browser Anda tidak mendukung tag video.
                             </video>
                             <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Cuplikan berita dari media menunjukkan framing yang berbeda-beda, antara menyalahkan alam dan menyoroti kelalaian pemerintah.</figcaption>
