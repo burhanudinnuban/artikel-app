@@ -73,7 +73,7 @@ export default function JournalPage() {
                 <p>Bencana banjir bandang yang melanda wilayah pesisir barat dan pegunungan di Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menjadi tonggak krisis lingkungan terdahsyat di penghujung tahun ini. Kejadian yang berlangsung secara simultan di tiga provinsi tersebut telah memakan korban jiwa yang sangat besar, merusak ribuan infrastruktur publik, dan memaksa puluhan ribu warga mengungsi. Karakteristik banjir bandang ini sangat destruktif karena membawa material kayu, bebatuan, dan lumpur pekat yang menyapu pemukiman dalam waktu yang sangat singkat.</p>
                 
                 <figure className="my-8">
-                  <Image src="https://th.bing.com/th?id=OIF.84%2F6%2F%2BoFSXkvP4EM1n3jHw&cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="flood destruction" />
+                  <Image src="/update-bajir.jpeg" alt="Dampak banjir bandang" width={800} height={450} className="rounded-lg shadow-lg w-full object-cover" data-ai-hint="flood destruction" />
                   <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Foto udara menunjukkan skala kerusakan masif di salah satu desa di Aceh, di mana material banjir bandang berupa lumpur dan kayu gelondongan menyapu bersih pemukiman warga, menyoroti dampak destruktif dari bencana tersebut.</figcaption>
                 </figure>
 
@@ -113,23 +113,44 @@ export default function JournalPage() {
 
             <Section title="Studi Kasus: Analisis Isi Media terhadap Respons Banjir Bandang" id="studi-kasus">
                 <SubSection title="1. Fokus Analisis Isi (Hipotesis Temuan)" id="fokus-analisis">
+                    <p>Temuan dari analisis isi media menunjukkan beberapa pola framing yang signifikan dalam pemberitaan bencana banjir bandang di Sumatera.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+                        <figure>
+                            <Image src="/pemerintah-tidak-niat.jpeg" alt="Kritik terhadap pemerintah" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="government criticism" />
+                            <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Meme yang beredar di media sosial mengkritik respons pemerintah yang dianggap lamban dan tidak serius.</figcaption>
+                        </figure>
+                        <figure>
+                            <Image src="/dpr-gak-guna.jpeg" alt="Kritik terhadap DPR" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="parliament criticism" />
+                            <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Sentimen negatif publik juga ditujukan kepada parlemen yang dinilai tidak memberikan kontribusi signifikan.</figcaption>
+                        </figure>
+                        <figure>
+                             <Image src="/pencitraan.jpeg" alt="Tudingan pencitraan" width={400} height={300} className="rounded-lg shadow-lg w-full h-48 object-cover" data-ai-hint="political imaging" />
+                            <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Kunjungan pejabat ke lokasi bencana seringkali dibingkai media sebagai ajang pencitraan politik.</figcaption>
+                        </figure>
+                    </div>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Dominasi Narasi "Human Error" vs "Nature's Wrath":</strong> Meskipun pemerintah berusaha membingkai bencana ini sebagai "Siklon Senyar" (faktor alam), temuan analisis isi menunjukkan media lebih dominan menggunakan diksi "Hutan Gundul" dan "Konversi Lahan". Hal ini menunjukkan bahwa media massa secara sadar melakukan framing untuk menggeser kesalahan dari alam ke tanggung jawab manusia (pemerintah dan korporasi).</li>
                         <li><strong>Gap Informasi Spasial:</strong> Terdapat temuan bahwa media memberikan porsi pemberitaan 60% lebih banyak pada kasus di Sumatera Barat (Padang) dibandingkan Aceh Tamiang, meskipun jumlah korban di Aceh setara. Hal ini membuktikan adanya bias geografis dalam Agenda Setting di mana aksesibilitas jurnalis ke lokasi menentukan seberapa besar sebuah wilayah dianggap "penting" dalam agenda nasional.</li>
                         <li><strong>Visual Framing:</strong> Gambar udara yang menunjukkan kontras antara lahan cokelat (longsor) dan sisa hutan hijau menjadi ikon visual yang paling sering diulang. Visual ini memperkuat hipotesis bahwa media ingin menanamkan persepsi di masyarakat bahwa Sumatera sedang dalam kondisi "Darurat Ekologis".</li>
                     </ul>
-                     <figure className="my-8">
-                      <Image src="https://tse2.mm.bing.net/th/id/OIP.js2GUqYRzMTU1Vwamo-kDgHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deforestasi dari udara" width={800} height={450} className="rounded-lg shadow-lg w-full" data-ai-hint="deforestation aerial view" />
-                      <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Contoh framing visual yang kuat: citra satelit memperlihatkan kontras tajam antara area deforestasi (coklat) yang menjadi sumber longsoran dan hutan primer (hijau) yang masih utuh, memperkuat narasi 'dosa ekologis' di media.</figcaption>
-                    </figure>
                 </SubSection>
                 <SubSection title="2. Pembahasan Kasus dan Permasalahan Komunikasi" id="pembahasan-kasus">
                     <p>Bencana banjir bandang yang melanda wilayah Aceh, Sumatera Utara, dan Sumatera Barat pada November 2025 bukan sekadar peristiwa alam, melainkan sebuah ruang pertarungan narasi. Melalui teori Agenda Setting, kita melihat bagaimana media massa berhasil mengangkat isu ini dari sekadar "berita daerah" menjadi "krisis nasional". Liputan 24 jam mengenai hilangnya Desa Sekumur dan meningkatnya angka kematian memaksa pemerintah pusat untuk menunda agenda lain dan memusatkan seluruh sumber daya negara ke pulau Sumatera. Media tidak hanya melaporkan duka, tetapi mendikte prioritas kebijakan nasional.</p>
-                     <div className="my-8">
-                        <div className="aspect-video w-full">
-                            <iframe className="w-full h-full rounded-lg shadow-lg" src="https://www.youtube.com/embed/EYNNPNNQ5MQ" title="Detik-detik Ganasnya Banjir Bandang Hancurkan Tanggul di Aceh Tamiang, Warga Menjerit Minta Bantuan" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                        </div>
-                        <p className="text-center text-sm italic mt-2 text-muted-foreground">Cuplikan video amatir yang viral di media sosial, menunjukkan kepanikan warga saat tanggul jebol di Aceh Tamiang. Video semacam ini, dengan muatan emosional yang tinggi, berkontribusi pada narasi human interest frame dan mempercepat mobilisasi bantuan dari masyarakat sipil.</p>
+                     <div className="my-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <figure>
+                            <video className="w-full h-full rounded-lg shadow-lg" controls>
+                                <source src="/bajir-ditangan-amatir.mp4" type="video/mp4" />
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                            <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Video amatir menunjukkan kepanikan warga, menyoroti kurangnya instruksi evakuasi yang jelas dan terkoordinasi.</figcaption>
+                        </figure>
+                         <figure>
+                            <video className="w-full h-full rounded-lg shadow-lg" controls>
+                                <source src="/banjir-jelang-sby.mp4" type="video/mp4" />
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                            <figcaption className="text-center text-sm italic mt-2 text-muted-foreground">Cuplikan berita dari media menunjukkan framing yang berbeda-beda, antara menyalahkan alam dan menyoroti kelalaian pemerintah.</figcaption>
+                        </figure>
                     </div>
                     <p>Namun, di balik penentuan agenda tersebut, terjadi kontestasi dalam Framing (pembingkaian). Terdapat dua bingkai utama yang saling beradu. Pertama, Frame Teknis-Meteorologi yang dominan digunakan pemerintah; narasi ini membingkai bencana sebagai akibat mutlak dari curah hujan ekstrem dan siklon. Bingkai ini cenderung memosisikan manusia sebagai korban pasif dari "kemarahan alam" guna meredam kritik politik.</p>
                     <p>Kedua, media massa dan aktivis secara agresif menggunakan Frame Ekologis-Akuntabilitas. Mereka membingkai bencana ini sebagai "dosa ekologis" akibat alih fungsi lahan dan penggundulan hutan di hulu sungai. Dengan menampilkan visual perbandingan hutan yang gundul dan pemukiman yang tersapu lumpur, media menggiring publik untuk menyimpulkan bahwa bencana ini adalah kegagalan tata kelola manusia, bukan sekadar takdir cuaca.</p>
