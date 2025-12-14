@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Logo } from '@/components/icons';
@@ -222,3 +223,5 @@ export default function JournalPage() {
     </div>
   );
 }
+
+    
